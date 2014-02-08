@@ -11,3 +11,5 @@ This package consists of:
 - A custom `svcforms` file.
 
 These will be applied to the [CITE Servlet](https://github.com/neelsmith/citeservlet) package at build time.
+
+**N.b.** For proper skinning, the file `cite-core.css` (from [the `hmt-core-css` repo](https://github.com/Eumaeus/hmt-css-core) should be copied into `/src/main/webapp/css/` in the servlet.

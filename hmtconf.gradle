@@ -31,9 +31,9 @@ project.ext {
     projectlabel = "The Homer Multitext"
 
     // Text to inject into header, footer and nav elements
-    htmlnav = "CITE services: <a href='home'>Home</a>"
-    htmlheader = "The Homer Multitext - CITE Services Interface (local test)"
-    htmlfooter = "citeservlet is free software developed by Christopher Blackwell and Neel Smith"
+    htmlnav = "<a href='home'>Home</a>"
+    htmlheader = "The Homer Multitext"
+    htmlfooter = "The Homer Multitext. Casey Dué and Mary Ebbott, Edd. Christopher Blackwell and Neel Smith, Architects. A project of the Center for Hellenic Studies of Harvard University, Gregory Nagy, Director."
 
 
     // Default URNs to populate query forms 
@@ -45,4 +45,8 @@ project.ext {
     // cutting ICT details. You almost certianly don't care
     // about this: 9000 is a good default.
     detailWidth = "9000"
+
+    // so conf can report on itself.  Wow, how meta!
+    conf = "conf.gradle"
+
 }
