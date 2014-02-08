@@ -1,0 +1,32 @@
+/* URLs for CITE services, Image Citation Tool, and CITEKit.
+*/
+
+
+project.ext {
+
+	// Where you want to provide query forms for the services
+	//queryforms = "http://folio.dyndns-web.com/citeservlet/svcforms"
+	queryforms = "http://localhost:8888/citeservlet/svcforms"
+
+    // The four CITE services	    
+    //texts = "http://folio.dyndns-web.com/citeservlet/texts"
+    //indices =  "http://folio.dyndns-web.com/citeservlet/indices"
+    //collections = "http://folio.dyndns-web.com/citeservlet/collections"
+    //images = "http://folio.dyndns-web.com/citeservlet/images"
+
+
+    texts = "http://localhost:8888/citeservlet/texts"
+    indices =  "http://localhost:8888/citeservlet/indices"
+    collections = "http://localhost:8888/citeservlet/collections"
+    images = "http://localhost:8888/citeservlet/images"
+
+    // The image citation tool
+    //ict = "http://folio.dyndns-web.com/citeservlet/ict.html"
+    ict = "http://localhost:8888/citeservlet/ict.html"
+
+    // CiteKit javascript package
+    citekit = "citekit/js/cite-no-jq.js"
+
+	//My custom port
+	jettyPort = 8888
+}

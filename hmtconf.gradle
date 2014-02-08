@@ -1,0 +1,48 @@
+/* Configuration for citeservlet
+*/
+
+
+project.ext {
+
+    /* *****************************************  */		    
+    /* Two essential system configuration values  */
+    /* *****************************************  */		    
+    // 1. Sparql endpoint (used by all services)
+    sparqls  = "http://localhost:3030/ds/"
+
+    // 2. Absolute or relative URL of IIPSrv fast cgi (used by image service)
+    iipsrv = "http://beta.hpcc.uh.edu/fcgi-bin/iipsrv.fcgi"
+
+    // Optional specification of a directory with a TextInventory
+    // if you are running CTS locally (from the "texts" servlet):
+    inventoryDir = "/cite/hmtarchive/inventories"
+
+	// 3. XSLT to use for constructing IIPMooViewer replies
+	mooxslt = "xslt/citeimg_getiipmooviewer_remote.xsl"
+	//mooxslt = "xslt/citeimg_getiipmooviewer.xsl"
+
+    /* *****************************************  */		    
+    /* Project-specific values                    */
+    /* *****************************************  */		    
+    // Where you will install or run citeservlet
+    homeUrl = "http://localhost:8888/citeservlet"
+
+    // Strings for labelling web pages
+    projectlabel = "The Homer Multitext"
+
+    // Text to inject into header, footer and nav elements
+    htmlnav = "CITE services: <a href='home'>Home</a>"
+    htmlheader = "The Homer Multitext - CITE Services Interface (local test)"
+    htmlfooter = "citeservlet is free software developed by Christopher Blackwell and Neel Smith"
+
+
+    // Default URNs to populate query forms 
+    demoImage = "urn:cite:hmt:vaimg.VA012RN-0013"
+    demoText = "urn:cts:greekLit:tlg0012.tlg001.msA:1.1"
+    demoObject = "urn:cite:hmt:msA.12r"
+
+    // pixel width (as a String) of source image to use in
+    // cutting ICT details. You almost certianly don't care
+    // about this: 9000 is a good default.
+    detailWidth = "9000"
+}
